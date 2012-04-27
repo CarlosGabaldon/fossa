@@ -6,7 +6,7 @@ FactoryGirl.define do
   end
   
   factory :project do |project|
-    project.name 'Project One'
+    project.name 'Project one'
     project.description 'Project one description'
   end
   
