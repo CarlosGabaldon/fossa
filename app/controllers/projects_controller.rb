@@ -1,7 +1,8 @@
 class ProjectsController < ApplicationController
+  respond_to :html, :js
   
   def index
-    get_projects
+    respond_with get_projects
   end
   
   
