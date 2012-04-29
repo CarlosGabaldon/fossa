@@ -5,5 +5,8 @@ class CreateUsers < ActiveRecord::Migration
 
       t.timestamps
     end
+    
+    User.create(:email => 'elephant@jungle.com')
+    
   end
 end

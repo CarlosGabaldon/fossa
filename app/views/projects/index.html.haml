@@ -1,2 +1,16 @@
-- @user.projects.each do |project|
-  %p=project.name
+%h2 #{@projects.length} Projects
+
+%h3{:id => "high"} #{@high_projects.length} High
+%ul
+- @high_projects.each do |project|
+  %li=project.name
+  
+%h3{:id => "medium"} #{@med_projects.length} Medium
+%ul
+- @med_projects.each do |project|
+  %li=project.name
+  
+%h3{:id => "low"} #{@low_projects.length} Low
+%ul
+- @low_projects.each do |project|
+  %li=project.name

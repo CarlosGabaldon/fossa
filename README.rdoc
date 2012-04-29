@@ -69,10 +69,11 @@
 
 = DEV
 
-  $ rake db:migrate
+  $ rake db:migrate db:test:prepare # rake db:drop 
+  $ rake db:seed
   $ rake cucumber
-  $ rails server
-  $ open http://0.0.0.0:3000/
+  $ rails s
+  $ open http://0.0.0.0:3000/projects
 
 
 = PROD

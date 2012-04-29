@@ -8,6 +8,7 @@ FactoryGirl.define do
   factory :project do |project|
     project.name 'Project one'
     project.description 'Project one description'
+    project.priority 2
   end
   
   factory :project_with_user, :parent => :project do |project|
