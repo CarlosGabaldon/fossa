@@ -2,6 +2,9 @@
 # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
 #
 
+
+user = User.create(:email => 'elephant@jungle.com')
+
 high_priority = Priority.create(:name => "High")
 med_priority = Priority.create(:name => "Med")
 low_priority = Priority.create(:name => "Low")
@@ -19,7 +22,6 @@ zebras_project = Project.new(:name => "Zebras for the rainforest",
                       :priority => low_priority)
 zebras_project.save
 
-user = User.find(User.first)
 user.projects << giraffes_project
 user.projects << gorillas_project
 user.projects << zebras_project
